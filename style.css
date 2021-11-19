@@ -11,6 +11,7 @@
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	border-radius: 5px;
 }
 
 .container {
@@ -27,6 +28,7 @@
 	object-fit: cover;
 	cursor: pointer;
 	transition: .5s ease-in-out;
+	
 	/*filter: brightness(0.5) grayscale(100%);*/
 } 
 
@@ -78,19 +80,23 @@
     text-decoration: none;
     color: black;
     padding-left: 20px;
-    border-bottom: 1px solid white;
-    box-shadow: 0 1px 0 #8D8A8A;
+    border: 1px solid rgb(66, 66, 66);
+	border-radius: 5px;
+    box-shadow: 2px 2px 0 #8D8A8A;
 }
 
 .menu label {
     display: block;
     height: 70px;
     line-height: 70px;
+	font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: black;
+	margin: 10px 0 0 10px;
     padding-left: 20px;
-    border-bottom: 1px solid white;
-    box-shadow: 0 1px 0 #8D8A8A;
+    border: 1px solid rgb(66, 66, 66);
+	border-radius: 5px;
+    box-shadow: 2px 2px 0 #8D8A8A;
     cursor: pointer;
 } 
 
