@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;	
+}
+
+.container .cards .img_wrap .cat {
+	object-fit: cover;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-gap: 15px;
+}
+
+.container .cards .img_wrap .cat img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+	/*filter: brightness(0.5) grayscale(100%);*/
+} 
+
+.container .cards .img_wrap .cat:hover img {
+	transform: scale(1.1);
+}
+
+.cards {
+	position: relative;
+	/*height: 100%;
+	width: 100%;*/
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 300px;
+	grid-gap: 15px;
+	/*grid-auto-flow: dense;*/
+}
+
+.container .cards .img_wrap:nth-child(8n+1) {
+	grid-column-start: span 2;
+}
+
+.container .cards .img_wrap:nth-child(8n+7) {
+	grid-column-start: span 2;
+} 
+
+.container .cards .img_wrap:nth-child(8n) {
+	grid-column-start: span 3;
+}
+
+ /*Меню*/
+
+ input {
+ 	display: none;
+ }
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 #8D8A8A;
+}
+
+.menu label {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 22px;
+    color: black;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 #8D8A8A;
+    cursor: pointer;
+} 
+
+/*Переключатели*/
+
+#bengalskaya:checked ~ .cards .img_wrap .cat:not(.bengalskaya),
+#britanskaya:checked ~ .cards .img_wrap .cat:not(.britanskaya),
+#ruskaya_golubaya:checked ~ .cards .img_wrap .cat:not(.ruskaya_golubaya),
+#sfinks:checked ~ .cards .img_wrap .cat:not(.sfinks)  {
+	/*filter: brightness(0.5) grayscale(100%);*/
+    opacity: .3;
+}
+
+#all_cats:checked ~ .menu [for="all_cats"],
+#bengalskaya:checked ~ .menu [for="bengalskaya"],
+#britanskaya:checked ~ .menu [for="britanskaya"],
+#ruskaya_golubaya:checked ~ .menu [for="ruskaya_golubaya"],
+#sfinks:checked ~ .menu [for="sfinks"] {
+    color: white;
+    background-color: #5A5A5A;
+}
