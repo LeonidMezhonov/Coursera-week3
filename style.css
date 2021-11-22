@@ -5,7 +5,7 @@
 	position: relative;	
 }
 
-.container .cards .img_wrap .cat {
+.container .cards .cat {
 	object-fit: cover;
 	position: relative;
 	height: 100%;
@@ -22,7 +22,7 @@
 	grid-gap: 15px;
 }
 
-.container .cards .img_wrap .cat img{
+.container .cards .cat img{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -32,7 +32,7 @@
 	/*filter: brightness(0.5) grayscale(100%);*/
 } 
 
-.container .cards .img_wrap .cat:hover img {
+.container .cards .cat .cat:hover img {
 	transform: scale(1.1);
 }
 
@@ -48,15 +48,15 @@
 	/*grid-auto-flow: dense;*/
 }
 
-.container .cards .img_wrap:nth-child(8n+1) {
+.container .cards .cat:nth-child(8n+1) {
 	grid-column-start: span 2;
 }
 
-.container .cards .img_wrap:nth-child(8n+7) {
+.container .cards .cat:nth-child(8n+7) {
 	grid-column-start: span 2;
 } 
 
-.container .cards .img_wrap:nth-child(8n) {
+.container .cards .cat:nth-child(8n) {
 	grid-column-start: span 3;
 }
 
@@ -102,12 +102,12 @@
 
 /*Переключатели*/
 
-#bengalskaya:checked ~ .cards .img_wrap .cat:not(.bengalskaya),
-#britanskaya:checked ~ .cards .img_wrap .cat:not(.britanskaya),
-#ruskaya_golubaya:checked ~ .cards .img_wrap .cat:not(.ruskaya_golubaya),
-#sfinks:checked ~ .cards .img_wrap .cat:not(.sfinks)  {
-	/*filter: brightness(0.5) grayscale(100%);*/
-    opacity: .3;
+#bengalskaya:checked ~ .cards .cat:not(.bengalskaya),
+#britanskaya:checked ~ .cards .cat:not(.britanskaya),
+#ruskaya_golubaya:checked ~ .cards .cat:not(.ruskaya_golubaya),
+#sfinks:checked ~ .cards .cat:not(.sfinks)  {
+	filter: brightness(0.5) grayscale(100%);
+	transition: .5s ease-in-out;
 }
 
 #all_cats:checked ~ .menu [for="all_cats"],
