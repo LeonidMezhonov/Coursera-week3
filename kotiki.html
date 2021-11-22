@@ -7,6 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<header id="header">
+		<h1 class="header">Бабуленькины котятки</h1>
+  	</header>
+
 	<div class="container">
 				<input type="radio" name="breed" id="bengalskaya">
             	<input type="radio" name="breed" id="britanskaya">
@@ -24,50 +28,86 @@
 		<article class="cards">
 				<div class="cat bengalskaya">
 					<img src="./котики/бенгальская.jpeg">
+					<p class="img_text">Василий, 2 года</p>
 				</div>	
 
-				<div class="cat bengalskaya">
+				<div class="cat ruskaya_golubaya">
 					<img src="./котики/бомбей.jpeg">
+					<p class="img_text">Инокентий, 5 лет</p>
 				</div>	
 
 				<div class="cat britanskaya">
 					<img src="./котики/британская.jpeg">
+					<p class="img_text">Черныш, 3 года</p>
 				</div>	
 
-				<div class="cat britanskaya">
+				<div class="cat sfinks">
 					<img src="./котики/манчкин.jpeg">
+					<p class="img_text">Тихон, 6 месяцев</p>
 				</div>	
 
 				<div class="cat britanskaya">
 					<img src="./котики/ориентальная.jpeg">
+					<p class="img_text">Рыжик, 4 года</p>
 				</div>
 
-				<div class="cat ruskaya_golubaya">
+				<div class="cat bengalskaya">
 					<img src="./котики/оцикет.jpeg">
+					<p class="img_text">Кот, 6 лет</p>
 				</div>	
 
 				<div class="cat ruskaya_golubaya">
 					<img src="./котики/персидская.jpeg">
+					<p class="img_text">Джек, 2 года</p>
 				</div>	
 
 				<div class="cat ruskaya_golubaya">
 					<img src="./котики/русская_голубая.jpeg">
+					<p class="img_text">Киса, 2 года</p>
 				</div>	
 
-				<div class="cat sfinks">
+				<div class="cat britanskaya">
 					<img src="./котики/саванна.jpeg">
+					<p class="img_text">Чижик, 5 лет</p>
 				</div>	
 
 				<div class="cat sfinks">
 					<img src="./котики/сфинкс.jpeg">
+					<p class="img_text">Василиса, 1 год</p>
 				<div>
 		</article>
 
-		<article class="rating">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+		<article class="rating_wrap">
+			<h1>РЕЙТИНГ</h1>
+			<input type="checkbox" id="rating_sidebar">
+			<label for="rating_sidebar">по убыванию</label> 
+			<div class="rating">
+				<div class="breed four-star">
+					<p>Бенгальская</p>
+					<div class="score"></div>
+				</div>
+				<div class="breed one-star">
+					<p>Британская</p>
+					<div class="score"></div>
+				</div>
+				<div class="breed five-star">
+					<p>Русская голубая</p>
+					<div class="score"></div>
+				</div>
+				<div class="breed three-star">
+					<p>Сфинкс</p>
+					<div class="score"></div>
+				</div>
+			</div>	
 		</article>
-
 	</div>
+
+	<footer>
+		<div class="footer_container">
+			<div class="firm_name">&#x00A9; ООО Бабуленькины котятки, 2021</div>
+			<address>Наш адрес: ул. Котова, д.5</address>
+		</div>
+	</footer>
 
 </body>
 </html>
